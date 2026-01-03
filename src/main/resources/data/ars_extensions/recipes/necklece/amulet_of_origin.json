@@ -1,0 +1,27 @@
+{
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+        "item": "ars_extensions:amulet_of_origin"
+    },
+    "pedestalItems": [
+        {
+            "item": "ars_extensions:amulet_of_discount"
+        },
+        {
+            "item": "ars_extensions:amulet_of_spell_damage"
+        },
+        {
+            "item": "ars_nouveau:amulet_of_mana_boost"
+        },
+        {
+            "item": "ars_nouveau:amulet_of_mana_regen"
+        }
+    ],
+    "reagent": [
+        {
+            "item": "ars_nouveau:wilden_tribute"
+        }
+    ],
+    "sourceCost": 0
+}

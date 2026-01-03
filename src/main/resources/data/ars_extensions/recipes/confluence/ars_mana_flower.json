@@ -1,0 +1,29 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ACA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:storage_blocks/source"
+        },
+        "B": {
+            "item": "ars_nouveau:magebloom"
+        },
+        "C": {
+            "item": "minecraft:glass_bottle"
+        }
+    },
+    "result": {
+        "item": "ars_extensions:ars_mana_flower",
+        "count": 1
+    }
+}

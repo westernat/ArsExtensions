@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "ars_extensions:ring_of_ultimate_discount",
+
+        "ars_extensions:ring_of_lesser_mana_boost",
+        "ars_extensions:ring_of_greater_mana_boost",
+        "ars_extensions:ring_of_ultimate_mana_boost",
+
+        "ars_extensions:ring_of_lesser_mana_regen",
+        "ars_extensions:ring_of_greater_mana_regen",
+        "ars_extensions:ring_of_ultimate_mana_regen",
+
+        "ars_extensions:ring_of_lesser_ars_spell",
+        "ars_extensions:ring_of_greater_ars_spell",
+        "ars_extensions:ring_of_ultimate_ars_spell"
+    ]
+}

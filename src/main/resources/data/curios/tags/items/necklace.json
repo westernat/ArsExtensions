@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "ars_extensions:amulet_of_discount",
+        "ars_extensions:amulet_of_spell_damage",
+        "ars_extensions:amulet_of_origin"
+    ]
+}

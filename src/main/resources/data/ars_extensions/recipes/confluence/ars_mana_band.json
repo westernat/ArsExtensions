@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "A A",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:storage_blocks/source"
+        }
+    },
+    "result": {
+        "item": "ars_extensions:ars_mana_band",
+        "count": 1
+    }
+}

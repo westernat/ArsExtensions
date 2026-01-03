@@ -1,0 +1,39 @@
+{
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+        "item": "ars_extensions:ring_of_greater_ars_spell"
+    },
+    "pedestalItems": [
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "item": "minecraft:chorus_fruit"
+        },
+        {
+            "item": "minecraft:chorus_fruit"
+        },
+        {
+            "tag": "forge:gems/source"
+        },
+        {
+            "tag": "forge:gems/source"
+        }
+    ],
+    "reagent": [
+        {
+            "item": "ars_extensions:ring_of_lesser_ars_spell"
+        }
+    ],
+    "sourceCost": 0
+}

@@ -1,0 +1,39 @@
+{
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+        "item": "ars_extensions:ring_of_ultimate_mana_regen"
+    },
+    "pedestalItems": [
+        {
+            "item": "ars_nouveau:wilden_tribute"
+        },
+        {
+            "item": "minecraft:nether_star"
+        },
+        {
+            "item": "minecraft:chorus_fruit"
+        },
+        {
+            "item": "minecraft:chorus_fruit"
+        },
+        {
+            "tag": "forge:ender_pearls"
+        },
+        {
+            "tag": "forge:ender_pearls"
+        },
+        {
+            "tag": "forge:gems/emerald"
+        },
+        {
+            "tag": "forge:gems/emerald"
+        }
+    ],
+    "reagent": [
+        {
+            "item": "ars_extensions:ring_of_greater_mana_regen"
+        }
+    ],
+    "sourceCost": 1000
+}

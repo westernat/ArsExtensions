@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ars_extensions:item/ring_of_lesser_mana_regen"
+  }
+}

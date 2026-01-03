@@ -1,0 +1,39 @@
+{
+    "type": "ars_nouveau:enchanting_apparatus",
+    "keepNbtOfReagent": false,
+    "output": {
+        "item": "ars_extensions:amulet_of_discount"
+    },
+    "pedestalItems": [
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:gems/diamond"
+        },
+        {
+            "tag": "forge:gems/source"
+        },
+        {
+            "tag": "forge:gems/source"
+        },
+        {
+            "tag": "forge:gems/source"
+        },
+        {
+            "tag": "forge:storage_blocks/lapis"
+        },
+        {
+            "tag": "forge:storage_blocks/lapis"
+        }
+    ],
+    "reagent": [
+        {
+            "item": "ars_nouveau:dull_trinket"
+        }
+    ],
+    "sourceCost": 0
+}

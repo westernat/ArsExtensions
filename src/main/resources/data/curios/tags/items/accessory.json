@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "confluence"
+    }
+  ],
+  "values": [
+    "ars_extensions:ars_mana_band",
+    "ars_extensions:ars_mana_flower"
+  ]
+}
