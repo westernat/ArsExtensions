@@ -5,7 +5,6 @@ import com.hollingsworth.arsnouveau.api.perk.PerkAttributes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.Item;
@@ -23,33 +22,39 @@ public class RingOfLesserArsSpellItem extends Item implements ICurioItem {
     public RingOfLesserArsSpellItem() {
         super((new Properties()).stacksTo(1).fireResistant());
     }
+
     public int getMaxManaBoost(ItemStack i) {
         return 10;
     }
+
     public int getManaRegenBonus(ItemStack i) {
         return 1;
     }
+
     public int getSpellDamage(ItemStack i) {
         return 1;
     }
+
     protected String getTooltipItemName() {
         return BuiltInRegistries.ITEM.getKey(this).getPath();
     }
+
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid, ItemStack stack) {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
-        attributes.put((Attribute) PerkAttributes.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), (double)this.getMaxManaBoost(stack), AttributeModifier.Operation.ADDITION));
-        attributes.put((Attribute)PerkAttributes.MANA_REGEN_BONUS.get(), new AttributeModifier(uuid, getTooltipItemName(), (double)this.getManaRegenBonus(stack), AttributeModifier.Operation.ADDITION));
-        attributes.put((Attribute)PerkAttributes.SPELL_DAMAGE_BONUS.get(), new AttributeModifier(uuid, getTooltipItemName(), (double)this.getSpellDamage(stack), AttributeModifier.Operation.ADDITION));
+        attributes.put(PerkAttributes.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), this.getMaxManaBoost(stack), AttributeModifier.Operation.ADDITION));
+        attributes.put(PerkAttributes.MANA_REGEN_BONUS.get(), new AttributeModifier(uuid, getTooltipItemName(), this.getManaRegenBonus(stack), AttributeModifier.Operation.ADDITION));
+        attributes.put(PerkAttributes.SPELL_DAMAGE_BONUS.get(), new AttributeModifier(uuid, getTooltipItemName(), this.getSpellDamage(stack), AttributeModifier.Operation.ADDITION));
         return attributes;
     }
+
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         String itemName = getTooltipItemName(); // 获取物品 ID
-            // 鼠标经过时的默认文本
-            // 翻译键格式: tooltip.<你的ModID>.<物品ID>_text
-            pTooltipComponents.add(Component.translatable("tooltip." + "ars_extensions" + "." + itemName + ".text")
-                    .withStyle(style -> style.withColor(ChatFormatting.WHITE)));
+        // 鼠标经过时的默认文本
+        // 翻译键格式: tooltip.<你的ModID>.<物品ID>_text
+        pTooltipComponents.add(Component.translatable("tooltip." + "ars_extensions" + "." + itemName + ".text")
+                .withStyle(style -> style.withColor(ChatFormatting.WHITE)));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

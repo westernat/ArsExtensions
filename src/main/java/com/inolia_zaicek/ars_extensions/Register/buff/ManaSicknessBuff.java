@@ -11,14 +11,14 @@ public class ManaSicknessBuff extends MobEffect {
     public ManaSicknessBuff() {
         super(MobEffectCategory.HARMFUL, 0);
     }
+
     //治疗物品
     @Override
     public List<ItemStack> getCurativeItems() {
         //治疗物品组
-        ArrayList<ItemStack> ret = new ArrayList<>();
         //把牛奶删了ret.remove(new ItemStack(Items.MILK_BUCKET));
         //ret.remove(new ItemStack(Items.MILK_BUCKET));
         //返回空的数组，啥都没有，没法牛奶解除
-        return ret;
+        return new ArrayList<>();
     }
 }

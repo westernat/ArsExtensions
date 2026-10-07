@@ -5,8 +5,6 @@ import com.hollingsworth.arsnouveau.setup.registry.DamageTypesRegistry;
 import com.inolia_zaicek.ars_extensions.Register.ArsEEffectsRegister;
 import com.inolia_zaicek.ars_extensions.Register.ArsEItemRegister;
 import com.inolia_zaicek.ars_extensions.Util.TEGUtil;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

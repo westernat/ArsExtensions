@@ -16,13 +16,15 @@ public class ArsManaBandItem extends Item implements ICurioItem {
     public ArsManaBandItem() {
         super((new Properties()).stacksTo(1).fireResistant());
     }
+
     protected String getTooltipItemName() {
         return BuiltInRegistries.ITEM.getKey(this).getPath();
     }
+
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid, ItemStack stack) {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
-        attributes.put((Attribute)PerkAttributes.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.1, AttributeModifier.Operation.MULTIPLY_BASE));
+        attributes.put((Attribute) PerkAttributes.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.1, AttributeModifier.Operation.MULTIPLY_BASE));
         return attributes;
     }
 }

@@ -16,20 +16,24 @@ public class RingOfLesserManaBoostItem extends Item implements ICurioItem {
     public RingOfLesserManaBoostItem() {
         super((new Properties()).stacksTo(1).fireResistant());
     }
+
     public int getMaxManaBoost(ItemStack i) {
         return 40;
     }
+
     public int getManaRegenBonus(ItemStack i) {
         return 1;
     }
+
     protected String getTooltipItemName() {
         return BuiltInRegistries.ITEM.getKey(this).getPath();
     }
+
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid, ItemStack stack) {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
-        attributes.put((Attribute) PerkAttributes.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), (double)this.getMaxManaBoost(stack), AttributeModifier.Operation.ADDITION));
-        attributes.put((Attribute)PerkAttributes.MANA_REGEN_BONUS.get(), new AttributeModifier(uuid, getTooltipItemName(), (double)this.getManaRegenBonus(stack), AttributeModifier.Operation.ADDITION));
+        attributes.put(PerkAttributes.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), this.getMaxManaBoost(stack), AttributeModifier.Operation.ADDITION));
+        attributes.put(PerkAttributes.MANA_REGEN_BONUS.get(), new AttributeModifier(uuid, getTooltipItemName(), this.getManaRegenBonus(stack), AttributeModifier.Operation.ADDITION));
         return attributes;
     }
 }

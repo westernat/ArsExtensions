@@ -14,28 +14,32 @@ import java.util.Optional;
 @SuppressWarnings({"all", "removal"})
 public class TEGUtil {
     public static TEGUtil INSTANCE;
+
     public static TEGUtil getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new TEGUtil();
         }
         return INSTANCE;
     }
+
     //获取周围敌人列表
-    public static List<Mob> mobList(double range, LivingEntity entity){
-        double x =entity.getX();
-        double y =entity.getY();
-        double z =entity.getZ();
-        return entity.getCommandSenderWorld().getEntitiesOfClass(Mob.class,new AABB(x+range,y+range,z+range,x-range,y-range,z-range));
+    public static List<Mob> mobList(double range, LivingEntity entity) {
+        double x = entity.getX();
+        double y = entity.getY();
+        double z = entity.getZ();
+        return entity.getCommandSenderWorld().getEntitiesOfClass(Mob.class, new AABB(x + range, y + range, z + range, x - range, y - range, z - range));
     }
+
     //获取周围玩家列表
-    public static List<Player> PlayerList(double range, LivingEntity entity){
-        double x =entity.getX();
-        double y =entity.getY();
-        double z =entity.getZ();
-        return entity.getCommandSenderWorld().getEntitiesOfClass(Player.class,new AABB(x+range,y+range,z+range,x-range,y-range,z-range));
+    public static List<Player> PlayerList(double range, LivingEntity entity) {
+        double x = entity.getX();
+        double y = entity.getY();
+        double z = entity.getZ();
+        return entity.getCommandSenderWorld().getEntitiesOfClass(Player.class, new AABB(x + range, y + range, z + range, x - range, y - range, z - range));
     }
+
     public static boolean isCurioEquipped(LivingEntity entity, Item itemStackSupplier) {
-        Optional<SlotResult> slotResult = CuriosApi.getCuriosHelper().findFirstCurio(entity,itemStackSupplier);
+        Optional<SlotResult> slotResult = CuriosApi.getCuriosHelper().findFirstCurio(entity, itemStackSupplier);
         return slotResult.isPresent();
     }
 }

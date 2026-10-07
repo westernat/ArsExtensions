@@ -13,11 +13,10 @@ import java.util.function.Supplier;
 
 import static com.inolia_zaicek.ars_extensions.ArsExtensions.MODID;
 
-
 public class Tab {
-    public static final DeferredRegister<CreativeModeTab> creative_mode_tab= DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MODID);
-    public static final String MoreModTetraTab="item_group.ars_extensions.tab";
-    public static final Supplier<CreativeModeTab> materials=creative_mode_tab.register("item",()-> CreativeModeTab.builder()
+    public static final DeferredRegister<CreativeModeTab> creative_mode_tab = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final String MoreModTetraTab = "item_group.ars_extensions.tab";
+    public static final Supplier<CreativeModeTab> materials = creative_mode_tab.register("item", () -> CreativeModeTab.builder()
             //槽位位置
             .withTabsBefore(CreativeModeTabs.COMBAT)
             //物品栏名称
@@ -26,8 +25,8 @@ public class Tab {
             .icon(ArsEItemRegister.RingOfUltimateDiscount.get()::getDefaultInstance)
             .displayItems((itemDisplayParameters, output) -> {
                 // 遍历 CommonItem 列表中的物品
-                for(RegistryObject<Item> curios: ArsEItemRegister.CommonItem){
-                    if(curios.isPresent()){
+                for (RegistryObject<Item> curios : ArsEItemRegister.CommonItem) {
+                    if (curios.isPresent()) {
                         output.accept(curios.get());
                     }
                 }
@@ -35,8 +34,8 @@ public class Tab {
             })
             .build()
     );
-    public static void register(IEventBus bus){
+
+    public static void register(IEventBus bus) {
         creative_mode_tab.register(bus);
     }
-
 }

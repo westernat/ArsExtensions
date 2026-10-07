@@ -1,31 +1,23 @@
 {
-"item.ars_extensions.ring_of_ultimate_discount":"超位节魔之戒",
-
-
-"item.ars_extensions.ring_of_lesser_mana_boost":"次等蕴魔之戒",
-"item.ars_extensions.ring_of_greater_mana_boost":"高等蕴魔之戒",
-"item.ars_extensions.ring_of_ultimate_mana_boost":"超位蕴魔之戒",
-
-"item.ars_extensions.ring_of_lesser_mana_regen":"次等回魔之戒",
-"item.ars_extensions.ring_of_greater_mana_regen":"高等回魔之戒",
-"item.ars_extensions.ring_of_ultimate_mana_regen":"超位回魔之戒",
-
-"item.ars_extensions.ring_of_lesser_ars_spell":"虚时之戒",
-"item.ars_extensions.ring_of_greater_ars_spell":"高等虚时之戒",
-"item.ars_extensions.ring_of_ultimate_ars_spell":"超位虚时之戒",
-
-"item.ars_extensions.amulet_of_discount":"魔力返还护身符",
-"item.ars_extensions.amulet_of_spell_damage":"魔力爆发护身符",
-"item.ars_extensions.amulet_of_origin":"起源魔艺护身符",
-
-"tooltip.ars_extensions.ring_of_lesser_ars_spell.text":"使用魔符造成伤害时，目标的无敌时间减少25%%",
-"tooltip.ars_extensions.ring_of_greater_ars_spell.text":"使用魔符造成伤害时，目标的无敌时间减少50%%",
-"tooltip.ars_extensions.ring_of_ultimate_ars_spell.text":"使用魔符造成伤害时，目标的无敌时间减少100%%",
-
-"item.ars_extensions.ars_mana_band":"§d魔源手环",
-"item.ars_extensions.ars_mana_flower":"§d魔源花",
-"tooltip.ars_extensions.ars_mana_flower.text": "§d法力值低于§950§9%%§d时，会自动消耗背包内的§9魔源浆果§d，回复§98§9%%§d魔源，但会获得5s的§9魔源病§d效果\n§d(§9魔源病§d——降低§925§9%%§d的§9魔符伤害§d)",
-
-"effect.ars_extensions.mana_sickness": "魔源病",
-"item_group.ars_extensions.tab":"魔艺拓展"
+    "item.ars_extensions.ring_of_ultimate_discount": "超位节魔之戒",
+    "item.ars_extensions.ring_of_lesser_mana_boost": "次等蕴魔之戒",
+    "item.ars_extensions.ring_of_greater_mana_boost": "高等蕴魔之戒",
+    "item.ars_extensions.ring_of_ultimate_mana_boost": "超位蕴魔之戒",
+    "item.ars_extensions.ring_of_lesser_mana_regen": "次等回魔之戒",
+    "item.ars_extensions.ring_of_greater_mana_regen": "高等回魔之戒",
+    "item.ars_extensions.ring_of_ultimate_mana_regen": "超位回魔之戒",
+    "item.ars_extensions.ring_of_lesser_ars_spell": "虚时之戒",
+    "item.ars_extensions.ring_of_greater_ars_spell": "高等虚时之戒",
+    "item.ars_extensions.ring_of_ultimate_ars_spell": "超位虚时之戒",
+    "item.ars_extensions.amulet_of_discount": "魔力返还护身符",
+    "item.ars_extensions.amulet_of_spell_damage": "魔力爆发护身符",
+    "item.ars_extensions.amulet_of_origin": "起源魔艺护身符",
+    "tooltip.ars_extensions.ring_of_lesser_ars_spell.text": "使用魔符造成伤害时，目标的无敌时间减少25%%",
+    "tooltip.ars_extensions.ring_of_greater_ars_spell.text": "使用魔符造成伤害时，目标的无敌时间减少50%%",
+    "tooltip.ars_extensions.ring_of_ultimate_ars_spell.text": "使用魔符造成伤害时，目标的无敌时间减少100%%",
+    "item.ars_extensions.ars_mana_band": "§d魔源手环",
+    "item.ars_extensions.ars_mana_flower": "§d魔源花",
+    "tooltip.ars_extensions.ars_mana_flower.text": "§d法力值低于§950§9%%§d时，会自动消耗背包内的§9魔源浆果§d，回复§98§9%%§d魔源，但会获得5s的§9魔源病§d效果\n§d(§9魔源病§d——降低§925§9%%§d的§9魔符伤害§d)",
+    "effect.ars_extensions.mana_sickness": "魔源病",
+    "item_group.ars_extensions.tab": "魔艺拓展"
 }
